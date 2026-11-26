@@ -84,9 +84,9 @@ curl -i http://localhost/health
 
 ## Part 3: Cloud Deployment
 
-### 1. Triển khai lên Cloud (Railway / Render)
-- **Nền tảng:** Railway / Render
-- **Public URL:** Đang chuẩn bị deploy (xem file `DEPLOYMENT.md`)
+### 1. Triển khai lên Cloud (Render)
+- **Nền tảng:** Render (Docker Web Service + Managed Redis)
+- **Public URL:** https://k5-l3b-day14-truongvanhai-2a202604018.onrender.com (xem chi tiết tại `DEPLOYMENT.md`)
 - **Kiểm tra Public URL theo 4 lệnh chuẩn:**
   1. `curl -sS -o /dev/null -w '%{http_code}\n' "$BASE/health"` → `200`
   2. `curl -sS -o /dev/null -w '%{http_code}\n' "$BASE/ready"` → `200`
